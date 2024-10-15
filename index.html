@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="left-side">
+        <div class="center-pics">
+            <img src="pics/28267842_7.jpg" class="pic">
+            <h1 id="lorem">Lorem Ipsum</h1>
+        </div>    
+    </div>
+
+    <div class="right-side">
+        <div class="top">
+            <h2>Think of this like making an account for real life. You select your name, you make an email address, and Voila! You are a new person!</h2>
+            <h3>Just Try It!</h3>
+        </div>    
+
+        <div class="middle">
+            <h3>Let's Get Started!</h3>
+            <form class="form-full">
+                <div class="full-first-name">
+                    <label for="first-name"><span>*</span>First Name:</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Romel..." required maxlength="20" minlength="4">
+                </div>    
+
+                <div class="full-second-name">
+                    <label for="last-name" ><span>*</span>Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Burcea" required>
+                </div> 
+                
+                <div class="full-user-email">
+                    <laber for="user-email">Email Addres:</laber>
+                    <input type="email" id="user-email" name="user-email" placeholder="random@org.com">
+                </div>
+                
+                <div class="full-phone-number">
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="number" id="phone-number" name="phone-number" placeholder="1234567890" maxlength="10" minlength="6">
+                </div>    
+
+                <div class="full-user-password">
+                    <label for="user-password">Password:</label>
+                    <input type="password" id="user-password" name="user-password" placeholder="*******">
+                </div>    
+
+                <div class="full-confirm-passoword">
+                    <label for="confirm-passoword">Confirm Password:</label>
+                    <input type="password" id="confirm-passoword" name="confirm-passoword" placeholder="*******">
+                </div>    
+
+            </form>
+        </div>
+
+        <div class="bottom">
+            <button class="create" onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')">Create Account</button>
+            <h4>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Log In</a></h4>
+            <h3>Want Dark Mode? Press on this button!</h3>
+            <button class="darkbtn">Dark Mode</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>

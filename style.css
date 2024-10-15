@@ -1,0 +1,247 @@
+body{
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+:root{
+    --rightcolor: #F5F5F5;
+
+    --topcolor: #F5F5F5;
+    --insidetop: #607274;
+
+    --midcolor: white;
+
+    --insidemid: black;
+
+    -loremcolor: rgb(0, 0, 0);
+
+    --botcolor: #F5F5F5;
+    --insidebot: black;
+
+    --createbtn: white;
+
+    --btncolour: #607274;
+
+    --bigpic: url(trees.jpg)
+}
+
+.dark{
+    --rightcolor: #01000a;
+
+    --topcolor: #040D12;
+    --insidetop: #FC6736;
+
+    --midcolor: #183D3D;
+    --insidemid: white;
+
+    -loremcolor: rgb(255, 255, 255);
+
+    --botcolor: #040D12;
+    --insidebot: #FC6736;
+
+    --createbtn: white;
+
+    --btncolour: #FC6736;
+
+    --bigpic: url(darkpick.jpg)
+}
+
+
+
+.pic{
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block; 
+    mix-blend-mode: multiply; 
+    
+    
+}
+
+#lorem{
+    color: rgb(0, 0, 0);
+    padding-top: 23px;
+    
+}
+
+.center-pics{
+    display: flex;
+    gap: 20px;
+    background-color: rgba(255, 246, 246, 0.5);
+    height: 150px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side{    
+    display: flex;
+    background-image: var(--bigpic);
+    height: 100vh;
+    width: 800px;
+    background-size: cover;
+    justify-content: center;
+    padding-top: 75px;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--rightcolor);
+}
+
+
+.top{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--topcolor);
+    height: 400px;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    font-family: "Londrina Sketch", sans-serif;
+    font-size: 30px;
+}
+
+.top > h2, h3{
+    color: var(--insidetop);
+    font-weight: bold;
+}
+
+.middle{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--midcolor);
+    height: 450px;
+    padding-left: 80px;
+    padding-right: 80px;
+    flex-wrap: wrap;
+    font-family: "Afacad Flux", sans-serif;
+    color: var(--insidemid);
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+    
+}
+
+.middle > h3{
+    font-size: 40px;
+    font-family: "Afacad Flux", sans-serif;
+    
+    font-weight: 1000;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+    color: var(--insidemid);
+    
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+.create{
+    height: 60px;
+    width: 250px;
+    background-color: var(--btncolour);
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size:larger;
+    color: var(--createbtn);
+    font-weight: bolder;
+    border-radius: 20px;
+    border-color: #607274;
+    border-style: none;
+    
+}
+
+.darkbtn{
+    height: 60px;
+    width: 250px;
+    background-color: var(--btncolour);
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size:larger;
+    color: white;
+    font-weight: bolder;
+    border-radius: 20px;
+    border-color: #607274;
+    border-style: none;
+}
+
+.bottom > h3 {
+    font-family: "Londrina Sketch", sans-serif;
+    color: var(--insidebot);
+    font-size: 30px;
+}
+
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 1150px;
+    gap: 50px;
+}
+
+[class^="full-"]{
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    height: 50px;
+    width: 200px;
+    font-family: fantasy;
+    
+}
+
+input{
+    width: 200px;
+    height: 400px;
+    border-radius: 5px;
+    
+}
+
+
+
+
+.bottom{
+    display:flex;
+    flex-direction: column;
+    background-color: var(--botcolor);
+    height: 400px;
+    padding-top: 50px;
+}
+
+.bottom > h4{
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size:larger;
+    color: var(--insidebot)
+}
+
+
+#lorem{
+    font-family: "Londrina Sketch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.pic{
+    height: 150px;
+    width: 150px;
+}
